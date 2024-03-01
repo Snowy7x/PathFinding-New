@@ -1,0 +1,32 @@
+<html>
+	<head>
+		<title>Anime AI</title>
+		<link rel="stylesheet" type="text/css" href="style/style.css">
+		<link rel="stylesheet" type="text/css" href="style/anim.css">
+	</head>
+
+	<body>
+		<!-- Creating nav bar -->
+		<div class="nav">
+			<a class="logo">Path Finding</a>
+			<div class="dropdown">
+    		<button class="dropbtn">Alogarithms:  
+      		<span class="caret"></span>
+    		</button>
+
+    		<div class="dropdown-content">
+      		<a onclick="SetAlgo('Dijkstra')">Dijkstra</a>
+      		<a onclick="SetAlgo('A*')">A*</a>
+      		<a>Soon..</a>
+    		</div></div> 
+    		<a id="visual-btn" onclick="Search()" class="visual">Visualize Dijkstra</a>
+    		<a onclick="Clear()" class="item">Clear Bord</a>
+    	</div>
+		<!-- End navbar-->
+		<div id="grid" class="graph"> </div>
+
+	</body>
+
+	<script type="text/javascript" src="scripts/graph.js"></script>
+	<script type="text/javascript" src="scripts/dijkstra.js"></script>
+</html>
